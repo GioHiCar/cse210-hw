@@ -11,16 +11,16 @@ class Program
         string letter = "";
         
         if (grade >= 90){
-            
-        }
-        else if (grade >= 80){
             letter = "A";
         }
-        else if (grade >= 70){
+        else if (grade >= 80){
             letter = "B";
         }
-        else if (grade >= 60){
+        else if (grade >= 70){
             letter = "C";
+        }
+        else if (grade >= 60){
+            letter = "D";
         }
         else{
             letter = "F";
