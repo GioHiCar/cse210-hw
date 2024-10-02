@@ -16,6 +16,27 @@ public class Fraction{
         _top = top;
         _bottom = bottom;
     }
+
+    public int GetTop(){
+        Console.WriteLine("Enter the numerator");
+        string input = Console.ReadLine();
+        int top = int.Parse(input);
+        return top;
+    }
+    public int GetBottom(){
+        Console.WriteLine("Enter the denominator");
+        string input = Console.ReadLine();
+        int bottom = int.Parse(input);
+        return bottom;
+    }
+
+    public void SetTop(int top){
+        _top = top;
+    }
+    public void SetBottom(int bottom){
+        _bottom = bottom;
+    }
+
     public string GetFractionString(){
         string text = $"{_top}/{_bottom}";
         return text;
