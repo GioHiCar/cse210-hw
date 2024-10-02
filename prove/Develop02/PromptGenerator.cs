@@ -7,7 +7,8 @@ public class PromptGenerator{
         "What exciting thing happened to me today?",
         "Was today better than yesterday?",
         "If I had one thing I could do over today, what would it be?",
-        "What goals for today did i accomplish?"
+        "What goals for today did i accomplish?",
+        "What was the strongest emotion I felt today?"
     };
     public string GetRandomPrompt(){
         //get random index value and lookup the string in _prompts
