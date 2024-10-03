@@ -17,17 +17,11 @@ public class Fraction{
         _bottom = bottom;
     }
 
-    public int GetTop(){
-        Console.WriteLine("Enter the numerator");
-        string input = Console.ReadLine();
-        int top = int.Parse(input);
-        return top;
+    public int GetTop(){ 
+        return _top;
     }
     public int GetBottom(){
-        Console.WriteLine("Enter the denominator");
-        string input = Console.ReadLine();
-        int bottom = int.Parse(input);
-        return bottom;
+        return _bottom;
     }
 
     public void SetTop(int top){
