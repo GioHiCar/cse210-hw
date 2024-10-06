@@ -43,12 +43,11 @@ public class Scripture{
         }
     }
     public string GetDisplayText(){
-        Console.WriteLine(_reference);
+        Console.WriteLine(_reference.GetDisplayText());
         string displayText = "";
-        //displayText = _reference.GetDisplayText();
         foreach(Word word in _word)
         {
-            displayText = displayText + " " + word.GetDisplayText();
+            displayText = displayText + word.GetDisplayText() + " ";
         }
         return displayText;
     }
