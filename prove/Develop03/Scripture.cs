@@ -15,6 +15,7 @@ public class Scripture{
         foreach (Word word in _word){
             if(word.IsHidden() == false){
                 visibleWords.Add(word);
+                _reference = reference;
             }
         }
         //this list will contain the indexes we will use to locate words from the _words list
