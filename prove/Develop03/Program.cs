@@ -20,6 +20,6 @@ class Program
 
             userInput = Console.ReadLine();
             numberToHide = 3;
-        }while(scripture.IsCompletelyHidden() != true|| userInput != "quit");
+        }while(!scripture.IsCompletelyHidden() && userInput != "quit");
     }
 }
