@@ -7,6 +7,7 @@ public class Scripture{
         foreach (string textWord in textWords){
             Word word = new Word(textWord);
             _word.Add(word);
+            _reference = reference;
         }
     }
     public void HideRandomWords(int numberToHide){
@@ -15,7 +16,6 @@ public class Scripture{
         foreach (Word word in _word){
             if(word.IsHidden() == false){
                 visibleWords.Add(word);
-                _reference = reference;
             }
         }
         //this list will contain the indexes we will use to locate words from the _words list
