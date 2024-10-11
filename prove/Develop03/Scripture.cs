@@ -52,12 +52,12 @@ public class Scripture{
         return displayText;
     }
     public bool IsCompletelyHidden(){
-        bool isCompletelyHidden = true;
+        //bool isCompletelyHidden = true;
         foreach(Word word in _word){
             if(!word.IsHidden()){
-                isCompletelyHidden = false;
+                return false;
             }
         }
-        return isCompletelyHidden;
+        return true;
     }
 }
