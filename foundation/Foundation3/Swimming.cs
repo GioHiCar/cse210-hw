@@ -1,5 +1,4 @@
 public class Swimming : Activity{
-    // private int _numOfLaps;
     public Swimming(int minutes, double laps) : base(minutes){
         _laps = laps;
     }

@@ -8,7 +8,7 @@ class Program
         List<Activity> _activities = new List<Activity>();
         Running run = new Running(30, 3);
         Cycling cycle = new Cycling(90, 30);
-        Swimming swim = new Swimming(10, 30);
+        Swimming swim = new Swimming(10, 35);
 
         _activities.Add(run);
         _activities.Add(cycle);
