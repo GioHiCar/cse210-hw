@@ -5,6 +5,7 @@ public class Running : Activity{
     }
     public override double GetSpeed()
     {
-        return _distance / _minutes;
+        _speed = (_distance / _minutes) * 60;
+        return _speed;
     }
 }

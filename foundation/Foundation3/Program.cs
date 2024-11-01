@@ -4,10 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         List<Activity> _activities = new List<Activity>();
-        Running run = new Running(30, 2);
-        Cycling cycle = new Cycling(30, 30);
-        Swimming swim = new Swimming(30, 5);
+        Running run = new Running(30, 3);
+        Cycling cycle = new Cycling(90, 30);
+        Swimming swim = new Swimming(10, 30);
 
         _activities.Add(run);
         _activities.Add(cycle);

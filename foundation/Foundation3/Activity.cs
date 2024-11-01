@@ -1,10 +1,10 @@
 public class Activity{
     
-    protected int _distance;
-    protected int _speed;
-    protected int _pace;
-    protected int _minutes;
-    protected int _laps;
+    protected double _distance;
+    protected double _speed;
+    protected double _pace;
+    protected double _minutes;
+    protected double _laps;
     DateTime _date;
     public Activity(int minutes){
         _minutes = minutes;
@@ -14,15 +14,18 @@ public class Activity{
         return _minutes;
     }
     public virtual double GetDistance(){
-        return _laps * 50 / 1000 * 0.62;
+        _distance = GetSpeed() * (_minutes / 60);
+        return _distance;
     }
     public virtual double GetSpeed(){
-        return _distance / _minutes;
+        _speed = _distance / _minutes * 60;
+        return _speed;
     }
     public virtual double GetPace(){
-        return _minutes / _distance;
+        _pace =  _minutes / _distance;
+        return _pace;
     }
     public virtual string GetSummary(){
-        return $"{_date} ({GetMinutes()})- Distance {GetDistance()} miles, Speed {GetSpeed} mph, Pace: {GetPace()} mine per";
+        return $"{_date.ToString("d MMM yyyy")} ({GetMinutes()} min)- Distance {GetDistance()} miles, Speed {GetSpeed()} mph, Pace: {GetPace()} min per mile";
     }
 }
