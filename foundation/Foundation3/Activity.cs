@@ -14,10 +14,10 @@ public class Activity{
         return _minutes;
     }
     public virtual double GetDistance(){
-        return _distance;
+        return _laps * 50 / 1000 * 0.62;
     }
     public virtual double GetSpeed(){
-        return _speed;
+        return _distance / _minutes;
     }
     public virtual double GetPace(){
         return _minutes / _distance;
